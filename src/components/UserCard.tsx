@@ -13,7 +13,7 @@ const UserCard = ({ person, toggleFollow }: UserCardProps) => {
         <span>{person.name}</span>
       </section>
 
-      <button onClick={() => toggleFollow(person.name)} className={`px-4 py-1 rounded font-semibold cursor-pointer transition-all duration-300 ease-in-out ${person.following ? "  bg-gray-400 text-gray-600 hover:bg-gray-500" : "bg-blue-500 text-white hover:bg-blue-600"}`}>{person.following ? "Unfollow" : "Follow"}</button>
+      <button onClick={() => toggleFollow(person.name)} className="px-4 py-1 rounded font-semibold cursor-pointer">{person.following ? "Unfollow" : "Follow"}</button>
 
     </div>
   )
